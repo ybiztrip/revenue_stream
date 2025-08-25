@@ -1,0 +1,33 @@
+CREATE TABLE `revenue`.`hotel_revenue` (
+                                           `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+                                           `account_id` BINARY(16) NOT NULL,
+                                           `provider` VARCHAR(45) NULL,
+                                           `base_price` DOUBLE NULL DEFAULT 0,
+                                           `sell_price` DOUBLE NULL DEFAULT 0,
+                                           `revenue` DOUBLE NULL DEFAULT 0,
+                                           `booking_id` VARCHAR(255) NULL,
+                                           `partner_booking_id` VARCHAR(255) NULL,
+                                           `status` VARCHAR(45) NULL,
+                                           `booking_status` VARCHAR(45) NULL,
+                                           `transaction_date` DATETIME NULL,
+                                           `currency` VARCHAR(45) NULL,
+                                           `created_on` DATETIME NULL DEFAULT CURRENT_TIMESTAMP,
+                                           `updated_on` DATETIME NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+                                           PRIMARY KEY (`id`));
+
+CREATE TABLE `revenue`.`flight_revenue` (
+                                           `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+                                           `account_id` BINARY(16) NOT NULL,
+                                           `provider` VARCHAR(45) NULL,
+                                           `base_price` DOUBLE NULL DEFAULT 0,
+                                           `sell_price` DOUBLE NULL DEFAULT 0,
+                                           `revenue` DOUBLE NULL DEFAULT 0,
+                                           `booking_id` VARCHAR(255) NULL,
+                                           `partner_booking_id` VARCHAR(255) NULL,
+                                           `status` VARCHAR(45) NULL,
+                                           `booking_status` VARCHAR(45) NULL,
+                                           `transaction_date` DATETIME NULL,
+                                           `currency` VARCHAR(45) NULL,
+                                           `created_on` DATETIME NULL DEFAULT CURRENT_TIMESTAMP,
+                                           `updated_on` DATETIME NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+                                           PRIMARY KEY (`id`));

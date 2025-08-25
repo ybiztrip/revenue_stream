@@ -31,3 +31,10 @@ build/
 
 ### VS Code ###
 .vscode/
+
+
+.mvn/
+mvnw
+mvnw.cmd
+
+/src/main/resources/dev.properties
